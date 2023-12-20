@@ -8,7 +8,7 @@ function shakeMagic8Ball(){
     }
 
     if(!question.trim()) {
-        alert('Please enter a valid question!')
+        alert('Ask a damn question.')
         return
     }
 
@@ -18,43 +18,48 @@ function shakeMagic8Ball(){
     switch (randomnumber){
         case 0:
             answer = "Yes"
-            image = "yes-image.jpg" //change this!! 
+            image = "images/check.png" 
             color = 'text-success'
             break; 
         case 1:
             answer = "No"
-            image = "no-image.jpg" //change this!! 
+            image = "images/x.png" 
             color = 'text-danger'
             reak; 
         case 2:
             answer = "Ask again later"
-            image = "later-image.jpg" //change this!! 
+            image = "images/hmm.png" 
             color = 'text-secondary'
             break; 
         case 3:
-            answer = "Maybe"
-            image = "maybe-image.jpg" //change this!! 
+            answer = "Maybe?"
+            image = "images/check.png" 
             color = 'text-secondary'
             break; 
         case 4:
             answer = "Cannot predict now"
-            image = "cannot-predict-image.jpg" //change this!! 
-            color = 'text-muted'
+            image = "images/hmm.png" 
+            color = 'text-secondary'
             break;
         case 5:
             answer = "Don't count on it"
-            image = "dont-count-on-it-image.jpg" //change this!! 
+            image = "images/x.png"
             color = 'text-danger'
             break; 
         case 6:
             answer = "Ummm..."
-            image = "ummm-image.jpg" //change this!! 
-            color = 'text-muted'
+            image = "images/hmm.png" 
+            color = 'text-secondary'
             break; 
         case 7:
             answer = "In your dreams"
-            image = "In-your-dreams-image.jpg" //change this!! 
+            image = "images/x.png" 
             color = 'text-danger'
+            break; 
+        case 8:
+            answer = "Absolutely!"
+            image = "images/check.png" 
+            color = 'text-success'
             break; 
     }
 
@@ -62,6 +67,8 @@ const responseText = document.getElementById('response-text');
 responseText.innerText = answer; 
 responseText.classList = `display-4 ${color}`; 
 document.getElementById('response-image').src = image; 
+
+
 
 
 
