@@ -78,6 +78,4 @@ document.getElementById('response-image').src = image;
 
 
 
-
-
 }

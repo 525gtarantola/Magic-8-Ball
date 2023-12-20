@@ -87,3 +87,13 @@ h1 {
     animation-iteration-count: 1;
   }
 
+.btn {
+     background-color: #d2b1e6;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
